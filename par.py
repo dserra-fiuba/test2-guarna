@@ -4,11 +4,14 @@ def solicitar_numero():
 def es_par(num):
     return num%2 == 0
 
-def main():
-    num = solicitar_numero()
-    if (es_par(num)):
+def mostrar_resultado(resultado):
+    if (resultado):
         print('El numero es par.')
     else:
         print('El numero es impar.')
+
+def main():
+    num = solicitar_numero()
+    mostrar_resultado(es_par(num))
 
 main()
