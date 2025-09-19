@@ -1,5 +1,8 @@
+def solicitar_numero():
+    return int(input('Ingrese numero positivo para conocer su paridad: '))
+
 def main():
-    num = int(input('Ingrese numero positivo para conocer su paridad: '))
+    num = solicitar_numero()
 
     if (num%2 == 0):
         print('El numero es par.')
